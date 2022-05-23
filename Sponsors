@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor</title>
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        .parallax {
+            background-image: url('https://images.unsplash.com/photo-1521651201144-634f700b36ef?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170');
+            height: 100%; 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        blockquote{
+            border-left-color: rgb(143, 61, 102);
+            border-left: 5px solid #cc0066;
+            background-image: initial;
+            background-color: rgba(221, 198, 243, 0.635);
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            position: relative;
+            font-family:itc_avant_garde_gothic_ltM;
+            font-style: italic;
+            font-size: 25px;
+            margin-left: 50px;
+            margin-right: 50px;
+            border-radius: 15px;
+            box-shadow: rgb(130 124 114) 4px 4px 10px;
+        }
+        .heading{
+            border: 5px solid #e4c0d2c3;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            position: relative;
+            font-family:itc_avant_garde_gothic_ltM;
+            font-size: 25px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 50px;
+            border-radius: 15px;
+        }
+        .h1{
+            font-size: 42px;
+            text-align: center;
+            color: navy;
+        }
+        .h2{
+            font-size: 26px;
+            text-align: center;
+        }
+        
+        .block{
+            color: black;
+            background-color: whitesmoke;
+            margin-left: 10%;
+            margin-right:10%;
+            margin-top: 50px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .block.h3{
+            font-size: 50px;
+            text-align: center;
+        }
+        .ele{
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+
+        @media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+    </style>
+</head>
+<body>
+
+        <div class="parallax"></div>
+        <div class="h2">In just six years, one unspayed cat or dog and her <br>offspring can produce 67,000 kittens or puppies.</div>            
+            <blockquote class="block">
+                <div class="h2"><p>Stray Animal Project is a 501(c)(3) nonprofit organization dedicated to <br>the education and the prevention of cruelty to animals. The purpose is to fund <br> neuter/spay programs and to provide education for responsible pet ownership. <br>We are starting our mission in Peru as it is estimated that there <br> are over 12 millions dogs and cats in the streets.</p></div>
+          </blockquote>
+          <div class="heading">
+            <div style="height:1000px;background-color:rgba(243, 239, 241, 0.477);">
+                
+                
+                <div class="ele">
+                    <span class="ele-sep">
+                    </span>
+                </div>
+                <blockquote class="block"><div style="font-size: 50px;">Become a Sponsor</div>
+                    <div class="h4">We are a fully donation-based organization that works with vets to <br> spay/neuter animals from low-income families, strays, and animals living in <br>
+                        shelters (they are run by people with no government support so they always <br>
+                        struggle with funds for food, meds, etc.). In other words, we focus on animals <br>
+                        that otherwise won’t be fixed.</div>
+                        <p></p>
+                        <p></p>
+                    <div class="h4">Stray Animal Project is a non-profit 501(c)(3) organization. Click here to see <br>our tax exempt status with the IRS (EIN 844801908)<br>
+                        <p></p>
+                        <p></p>
+                    Donate today or sign up to be a monthly donor. You can also support us by <br>
+                    shopping with Amazon Smile.</div>
+                </blockquote>
+                
+                
+                
+            </div>
+            
+        </div>
+
+        
+
+        <div class="parallax"></div>
+        
+
+</body>
+</html>
