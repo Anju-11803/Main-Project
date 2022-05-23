@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS Button-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+     <!-- Bootstrap CSS Form-->
+    <link rel = "stylesheet" 
+    href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin = "anonymous">
+
+    <title>Life Matters.com</title>
+    
+    <link rel="stylesheet" href="typewriter effect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    * {box-sizing: border-box;}
+      
+      body {font-family: cursive;
+        padding: 20px;
+        background: rgba(224, 145, 240, 0.856);}
+
+        .text{
+          font-size: 250%;
+          font-weight: bold;
+        }
+      
+      /* Header/Blog Title */
+      .header {padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 50px;
+            background: rgb(182, 125, 235);}
+      
+      .header h1 { color: wheat;
+        font-size: 80px;
+      }
+      
+      #h1{color:whitesmoke; 
+        font-size: 25px;}
+
+        p{font-size: 20px;}
+        ul{font-size: 20px;}
+
+        /* modal style*/
+        .modal-body{
+          font-size: 15px;
+        }
+
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+        width: 100%;
+        margin: 15px;
+        padding-bottom: 110px;
+        border-radius: 5px;
+        box-shadow: 2px 3px 6px #9e9e9e;
+        min-height: 90px;
+        max-height: 90px;
+        line-height: 90px;
+        font-size: x-large;
+      }
+      
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+            
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .text{
+        padding-left: 70px;
+      }
+      .row{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn { background-color: rgba(223, 171, 223, 0.329); 
+        float: left;
+        width: 70%;
+      }
+      
+      /* Right column */
+      .rightcolumn {
+        float: right;
+        width: 30%;
+        background-color: rgba(223, 171, 223, 0.329); 
+        padding-left: 20px;
+      }
+      
+      /* Fake image */
+      .loveimg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        padding-left: 2%;
+        }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: lavender;
+        padding: 100px;
+        margin: 30px;
+        border-radius: 20px;
+      }
+      .body{
+        padding: 40px;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      form{
+        font-size: 20px;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 760px) {
+        .leftcolumn, .rightcolumn {   
+          width: 100%;
+          padding: 0;
+        }
+      }
+       /* Footer */
+      .footer{
+            background-image: initial;
+            background: rgba(169, 93, 231, 0.397);
+            border-top:5px solid rgb(235, 231, 222);
+            border-bottom:5px solid rgb(235, 231, 222);
+            box-sizing: initial;
+            min-height:500px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top:50px;
+            padding-bottom: 50px;
+            display: flex;
+        }
+      .float{
+            width:50%;
+            margin:50px;
+            padding-left: 75px;
+            padding-top: 70px;
+            padding-right: 75px;
+            padding-bottom: 70px;
+            font-family: cursive;
+            font-size: 22px;
+            letter-spacing: 1px;
+            background-color: rgb(235, 232, 226);
+        }
+        #float2{
+            text-align: center;
+        }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+      </style>
+
+</head>
+<body>
+  
+    <div class="header">
+       <p> <img class="logo" src="logo-removebg.png"> </p> 
+        <div class="type">
+          <div class="typed-out"> 
+            <p id="h1">Life is precious!! Be it a human or an Animal !!! </p> 
+          </div>
+        </div>
+        <div class="container">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModal">
+            Get Involved
+            </button>
+            <!-- Modal -->
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+             <div class="modal-content">
+                <div class="modal-header">
+                   <h5 class="modal-title" id="exampleModalLabel">GET INVOLVED</h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+                   </button>
+                </div>
+                <div class="modal-body">
+                  <p>Your support would enable us to keep our 24x7 Animal Helpline active, along with carrying out community outreach programs for the welfare of animals and protection of the environment.</p>
+                  
+
+                  <p>Your contribution on a monthly, quarterly or yearly basis would help us to plan and sustain our medium and long-term projects and programs.</p>
+                </div>
+                <div class="modal-footer">
+                   <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                   <button type="button" class="btn btn-warning">
+                     <a href="Donate form.html">Donate Now</a> </button>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+      </div>
+      
+      <div class="topnav">
+        <a href="Life Matters.html" >Home</a>
+        <a href="About Us.html" target="_blank">About Us</a>
+        <a href="world Aminals day.html" target="_blank">World Animal Day </a>
+        <a href="Donate form.html" target="_blank">Get Involoved</a>
+        <a href="Reviews.html" target="_blank">Reviews</a>
+        <a href="Sponsor.html" target="_blank">Become a Sponsor</a>
+        <a href="Gallery.html" style="float:right" target="_blank" >Our Gallery</a>
+      </div>
+      
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <p class="text">WHO ARE WE ?</p>
+                <div class="loveimg" >
+                  <img src="https://images.moneycontrol.com/static-mcnews/2021/08/7-international-dog-day.jpg" height="100%" width="100%">
+                </div>
+                <div class="body">
+                    <p>India is a land of suffering, and its 35 million stray animals are faring even worse. We’re fighting to help the animals no one else will.
+                    <br>
+                    More than 35 million stray dogs roam the streets of India, without food, veterinary care or refuge from its often punishing elements. We’re fighting to give them a chance.</p>
+                    
+                    <p> India’s animal welfare system struggles with a lack of personnel and capital to build infrastructure to help  suffering stray animals. Help us build a network of stray animal rescues, veterinarians, and animal lovers to give these pets-to-be the critical intervention, veterinary care, and ultimately loving home they deserve.</p>
+                </div>
+          </div>
+
+          <p><strong>&nbsp;</strong></p>
+
+          <div class="card">
+            <p class="text">Documentary</p>
+            <div style="padding-left: 5%;";>
+              <iframe width="1000" height="650" src="https://www.youtube.com/embed/6ChReaV5QmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+                    <p class="text"> Our Mission </p>
+                    <div class="body">
+                    <p class="mission">
+                      <ul>
+                        <li> 
+                            Increasing our own ability to help special cases no one else will
+                        </li>
+                        <li>
+                            Bolstering the animal foster and adoption system to match stray animals with loving homes
+                        </li>
+                        <li>
+                            Expanding animal birth control, rabies vaccination, and veterinary services to keep animals and populations safe
+                        </li>
+                        <li>
+                            Recruiting and training animal control and transportation staff to get critical interventions to stray animals in need
+                        </li>
+                        <li>
+                            Public education to reduce abuse and promote fostering and adoption
+                        </li>
+                        <li>
+                            Stray Animal Foundation of India unites animal lovers around the world with a simple mission to rescue Indian dogs and cats without homes.
+                        </li>
+                        </ul>
+                        </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>YOU ARE REQUESTED TO FILL THIS FORM IF YOU HAVE INFORMATION REGARDING ANY ANIMAL THAT NEEDS OUR HELP!!</h2>
+            
+            <div class="form1" style="height:550px;">
+                <marquee direction="right"  scrollamount="11" >
+                  <b> <p style="color: blue;" > Your information will be confidential </p></b>
+                </marquee>
+                  <form target="_self">
+                      <label for="fname">First name:</label> <br>
+                      <input type="text" id="fname" name="fname"><br><br>
+                      <label for="lname">Last name:</label> <br>
+                      <input type="text" id="lname" name="lname"><br><br>
+                      <label for="phno">phone no:</label> <br>
+                      <input type="number" id="phno" name="phno"><br><br>
+                      <label for ="breed of animal"> breed of animal:</label> <br>
+                      <input type="text" id=" breed of animal "> <br> <br>
+                      <label for ="loc"> location:</label> <br>
+                      <input type="text" id=" loc "> <br> <br>
+                      <input type="submit" value="Submit">
+                    </form>
+            </div>
+          </div>
+          <p><strong>&nbsp;</strong></p>
+            <div class="card">
+              <h2>Adoption Application</h2>
+                <marquee direction="right"  scrollamount="11">
+                <br>
+                  <p style="color: blue;" > 
+                      Your information will be confidential </p>
+              </b>
+              </marquee>
+              <form target="_self">
+                <label for="fname">First name:</label> <br>
+                <input type="text" id="fname" name="fname"><br><br>
+              
+                  <label for="lname">Last name:</label> <br>
+                <input type="text" id="lname" name="lname"><br><br>
+              
+                  <label for="phno">phone no:</label> <br>
+                <input type="number" id="phno" name="phno"><br><br>
+                
+                  <label for ="Pet of intrest"> Pet of intrest:</label> <br>
+                <input type="text" id=" Pet of intrest "> <br> <br>
+                
+                  <label for ="add"> Address</label> <br>
+                <input type="text" id=" add "> <br> <br>
+                  
+                  <label for ="contact"> Contact</label> <br>
+                <input type="text" id=" contact "> <br> <br>
+                
+                  <label for ="occup"> Occupation</label> <br>
+                <input type="text" id=" occup "> <br> <br>
+                
+                <input type="submit" value="Submit">
+              </form>
+          </div>
+
+          <p><strong>&nbsp;</strong></p>
+
+          <div class="card">
+            <h2>Follow Us</h2>
+            <p>lifematters.com</p>
+            <p>
+                <ul>
+                    <li>Instagram <a href="#" class="fa fa-instagram"> </a> <br> </li>
+                    <li>facebook <a href="#" class="fa fa-facebook"></a> <br> </li>
+                    <li>Twitter <a href="#" class="fa fa-twitter"> </a><br> </li>
+
+                </ul>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      
+      <p><strong>&nbsp;</strong></p>
+
+      <div>
+        <section>
+            <div class="footer">
+                <div class="float">
+                    <p class="info-left">LIFE MATTERS.COM Foundation of India is a 501(c)3 charitable organization, and all donations to help India’s stray animals are tax-deductible to the fullest extent of the law. 100% of the contribution goes directly to the rescue. .EIN: 85-1128778. Our Florida registration number is N20000005346.</p>
+                    <p class="info-left">lifematters.com.org</p>
+                </div>
+                    
+                <div class="float" id="float2">
+                <p class="info-right">
+                    Contact Us
+                </p>
+                <p>CONTACT NO :+91 9834679832</p>                
+                <p>ADDRESSS: SECTOR 19, Hyderabad</p>
+                <p>EMAIL: lifematters.com.org</p>
+            </div>
+        </section>
+    </div>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+         integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+         crossorigin = "anonymous">
+      </script>
+      
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+         integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+         crossorigin = "anonymous">
+      </script>
+      
+      <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+         integrity = "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+         crossorigin = "anonymous">
+      </script>
+</body>
+</html>
